@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4M_05_napiwki.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            >
+            
+            <HorizontalStackLayout>
+                <Label
+                    Text="Kwota"
+                    FontSize="32"
+                    WidthRequest="200"
+                    />
+                <Entry
+                    x:Name="entKwota"
+                    Placeholder="Podaj kwotę"
+                    WidthRequest="150"
+                    HorizontalTextAlignment="End"
+                    FontSize="32"
+                    />                
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Label
+                    Text="napiwek"
+                    FontSize="24"
+                    WidthRequest="200"
+                    />
+                <Label
+                    
+                    Text="0.00"
+                    FontSize="24"
+                    WidthRequest="150"
+                    x:Name="lblNapiwek"
+                    HorizontalTextAlignment="End"
+                    />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Label
+                Text="suma"
+                FontSize="24"
+                WidthRequest="200"
+                />
+                <Label
+                Text="0.00"
+                FontSize="24"
+                WidthRequest="150"
+                x:Name="lblsuma"
+                HorizontalTextAlignment="End"
+                />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Label
+                Text="Napiwek %"
+                FontSize="24"
+                WidthRequest="200"
+                />
+                <Label
+                Text="0.00%"
+                FontSize="24"
+                WidthRequest="150"
+                x:Name="lblNapiwekProcent"
+                HorizontalTextAlignment="End"
+                />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="20">
+                <Button
+                    Text="10%"
+                    Clicked="btn10Napiwek"
+                    WidthRequest="150"
+                    />
+                <Button
+                    Text="7%"
+                    Clicked="btn7Napiwek"
+                    WidthRequest="150"
+                    
+                    />
+            </HorizontalStackLayout>
+            
+            <Slider 
+                Minimum="0"
+                Maximum="20"
+                ValueChanged="sldNapiwekChanged"
+                x:Name="sldNapiwekProc"
+                />
+            <Label
+                Text="0%"
+                FontSize="24"
+                x:Name="lblSliderValue"
+                HorizontalOptions="Center"
+                />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
